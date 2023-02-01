@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" type="module" defer></script>
+    <title>TP-POO-ToDos List</title>
+  </head>
+  <body>
+    <header><h1 class="titre">To Do List</h1></header>
+    <hr />
+    <main class="">
+      <form id="formContactAjout" class="">
+        <h2>Ajout de la tâche :</h2>
+
+        <div id="ajoutToDo">
+          <input
+            id="ajoutTitre"
+            class="ajout"
+            placeholder="Titre..."
+            name="titre"
+            type="text"
+          />
+
+          <textarea
+            id="ajoutContenu"
+            class="ajout"
+            placeholder="Contenu..."
+            name="contenu"
+            type="text"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+
+          <button class="ajout" type="submit" id="ajoutTache">Ajouter</button>
+        </div>
+        <hr />
+        <div class="" id="divSearch">
+          <h2>Recherche de la tâche :</h2>
+          <div class="">
+            <input
+              type="search"
+              class=""
+              placeholder="Rechercher..."
+              aria-label="Rechercher"
+            />
+            <button class="btnRes" type="button" id="buttonS">
+              Rechercher
+            </button>
+          </div>
+        </div>
+
+        <hr />
+
+        <table class="tableDatas" id="tab">
+          <thead>
+            <tr class="">
+              <th>ID</th>
+              <th>TITRE</th>
+              <th>CONTENU</th>
+              <th>ACTIONS</th>
+            </tr>
+          </thead>
+          <tbody class="datas" id="result"></tbody>
+        </table>
+      </form>
+    </main>
+  </body>
+</html>
